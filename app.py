@@ -12,7 +12,7 @@ os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
 @app.route('/')
 def index():
-    return send_from_directory('.', 'main.html')
+    return send_from_directory('.', 'index.html')
 
 @app.route('/api/download', methods=['POST'])
 def download_video():
